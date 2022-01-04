@@ -127,7 +127,6 @@ table {
 }
 
 .hero-caption {
-  font-weight: 800;
   font-size: 150px;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -161,6 +160,7 @@ table {
 .traveled {
   padding: 50px 0;
   background-color: rgb(235, 235, 235);
+  position: relative;
 }
 
 .traveled-list {
@@ -266,4 +266,128 @@ table {
 .footer-info {
   margin-bottom: 40px;
   font-size: 25px;
+}
+
+
+/*  */
+@media screen and (max-width: 720px) {
+  .title {
+    font-size: 30px;
+  }
+
+  /* ---HEADER--- */
+  .header-menu {
+    display: none;
+  }
+
+  /* ---MAIN--- */
+  /* HERO */
+  .hero-content {
+    top: 46%;
+  }
+
+  .hero-image {
+    display: block;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .hero-caption {
+    font-size: 50px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+  .subtext {
+    font-size: 15px;
+  }
+
+  /* TRAVELED */
+  .traveled {
+    padding: 50px 0 0 0;
+  }
+
+  .traveled-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .traveled-column {
+    align-items: center;
+    margin-bottom: 45px;
+    gap: 45px 0;
+  }
+
+  .traveled-item h3 {
+    font-size: 20px;
+  }
+
+  /* VIDEO */
+  .video {
+    position: relative;
+  }
+
+  .video-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px 0;
+  }
+
+  .video-item video {
+    max-width: 100%;
+  }
+  .video-item a {
+    font-size: 20px;
+  }
+
+  /* ---FOOTER--- */
+  .footer-top {
+    padding: 30px 0;
+  }
+
+  .footer-main {
+    gap: 0;
+  }
+
+  .footer-column img {
+    display: block;
+    width: 70px;
+    margin: 0 auto 20px auto;
+  }
+
+  .footer-desc {
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .social {
+    display: block;
+    text-align: center;
+  }
+  .social a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .social a i {
+    font-size: 15px;
+  }
+
+  .footer-heading {
+    font-size: 30px;
+    margin-bottom: 56px;
+  }
+
+  .footer-info {
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .footer-info i {
+    font-size: 15px;
+  }
 }
