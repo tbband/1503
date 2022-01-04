@@ -1,0 +1,269 @@
+/* ---RESET_CSS--- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ---HEADER--- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.header-logo > img {
+  width: 100px;
+}
+
+.header-menu  ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 60px;
+  padding: 20px;
+}
+.header-menu ul li a {
+  color: #000;
+}
+
+.header-phone {
+  font-weight: 700;
+  font-size: 20px;
+}
+.header-phone span {
+  font-weight: 400;
+}
+
+
+/* ---MAIN--- */
+/* HERO */
+.hero {
+  position: relative;
+  display: block;
+  background-color: rgb(51, 47, 47);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+  max-width: 65%;
+  border-radius: 20px 0 0 20px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 2;
+  left: 6%;
+}
+
+.hero-caption {
+  font-weight: 800;
+  font-size: 150px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: rgb(104, 104, 104);
+  text-shadow: 10px 10px 15px rgb(255, 255, 244);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: rgb(180, 187, 204);
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+}
+.subtext {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.hero-bar {
+  position: relative;
+  width: 60%;
+  height: 3px;
+  background-color: rgb(104, 104, 104);
+  margin: 10px 0;
+}
+
+/* TRAVELED */
+.traveled {
+  padding: 50px 0;
+  background-color: rgb(235, 235, 235);
+}
+
+.traveled-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 95px;
+  gap: 0 90px;
+}
+
+.traveled-column {
+  display: flex;
+  flex-direction: column;
+  gap: 85px 0;
+}
+
+.traveled-item h3 {
+  text-align: center;
+}
+
+.traveled-image {
+  display: block;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+/* VIDEO */
+.video {
+  padding: 50px 0;
+}
+
+.video-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.video-item video{
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+.video-item a {
+  display: block;
+  text-align: center;
+}
+
+/* BLOG */
+.blog {
+  position: relative;
+  padding-top: 30px;
+  background-color: rgb(235, 235, 235);
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-image {
+  width: 100%;
+}
+
+.text {
+  font-size: 34px;
+}
+
+/* ---FOOTER--- */
+.footer-top {
+  background-color: rgb(208, 225, 255);
+  padding: 50px 0;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 130px;
+}
+
+.footer-column img {
+  width: 100px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.footer-desc {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.footer-heading {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.footer-info {
+  margin-bottom: 40px;
+  font-size: 25px;
+}
